@@ -1,0 +1,19 @@
+{
+  "name": "tecnoacademia-web-node",
+  "version": "1.0.0",
+  "description": "Tecnoacademia con administrador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JahazielHernandezHoyos/Tecnoacademia-Web-Node.git"
+  },
+  "author": "Jahaziel Hernandez Hoyos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JahazielHernandezHoyos/Tecnoacademia-Web-Node/issues"
+  },
+  "homepage": "https://github.com/JahazielHernandezHoyos/Tecnoacademia-Web-Node#readme"
+}
