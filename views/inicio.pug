@@ -1,1 +1,120 @@
-
+extends ./layout/index
+block contenido
+        // final Menu (navbar)
+    // inicio banner carrusel
+    section.banner
+    .banner-content
+        h1 Tecnoacademia del Oriente
+        a(href='#') Acerca de nosotros
+    // fin banner carrusel
+    // inicio ¿Qué es? Segunda parte
+    div(style='padding-top: 200px; padding-bottom: 210px;')
+    h1.text-center(style="\
+    color: rgb(173, 88, 9);\
+    font-family: 'Montserrat', sans-serif;\
+    ")
+        | &iquest;Qu&eacute; es?
+    p.text-center(style='padding-left: 7%; padding-right: 7%;')
+        | La tecnoacademia genera un escenario de aprendizaje donde los ni&ntilde;os y j&oacute;venes de educaci&oacute;n b&aacute;sica secundaria y
+        | media pueden potenciar en el SENA sus capacidades de apropiaci&oacute;n hacia la ciencia y la tecnolog&iacute;a.
+        | La formaci&oacute;n en las tecnoacademias surge de una intervenci&oacute;n de alto impacto que busca fomentar el desarrollo de
+        | competencias en Ciencia, Tecnolog&iacute;a e Innovaci&oacute;n en esta poblaci&oacute;n, para generar competitividad e igualdad de
+        | oportunidades para los estudiantes, mediante una educaci&oacute;n de alta calidad que promueve adem&aacute;s sus habilidades de
+        | comunicaci&oacute;n y familiarizaci&oacute;n con las tecnolog&iacute;as emergentes.
+        | En las tecnoacademias, los estudiantes desarrollan sus competencias a trav&eacute;s de la formaci&oacute;n y la ejecuci&oacute;n de
+        | proyectos de investigaci&oacute;n y desarrollo experimental en una o varias ramas de las ciencias b&aacute;sicas y aplicadas
+        | como:
+    // final ¿Qué es? Segunda parte
+    // inicio Experiencias tercera parte
+    //
+    <h1 class="text-center" style="
+    color: rgb(173, 88, 9);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
+    ">
+    Experiencias
+    </h1>
+    // inicio Primer card
+    //
+    <div class="card " style="padding: 50px">
+    <div class="card-columns listrecent"></div>
+    <div class="row g-0">
+    <div style="padding-left: 50px" class="col-md-4">
+    <img
+    src="https://e7.pngegg.com/pngimages/556/580/png-clipart-computer-icons-symbol-user-profile-logo-symbol-miscellaneous-white.png"
+    class="img-fluid rounded-start" alt="..." />
+    </div>
+    <div class="col-md-8">
+    <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p style="padding-left: 500px" class="card-text position-absolute top-50 translate-middle">
+    Me parece un exelente lugar donde se pueden generar grandes
+    proyectos <br /><i> -Juan Batista</i>
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    // final primer card
+    // Final Experiencias tercera parte
+    // inicio cuarta parte
+    div(style='background-color: #f07523; padding-top: 200px; padding-bottom: 210px;')
+    h1.text-center(style="\
+    color: rgb(255, 255, 255);\
+    font-family: 'Montserrat', sans-serif;\
+    padding-top: 50px;\
+    ")
+        | Lineas de la Tecnoacadamia
+    .text-center(style='padding-top: 30px')
+        a.btn.btn-primary(type='button' href='tic.html') TIC
+        a.btn.btn-primary(type='button' href='diseño.html') Dise&ntilde;o y prototipado
+        a.btn.btn-primary(type='button' href='https://sites.google.com/misena.edu.co/electrobotica/inicio') Electr&oacute;nica y rob&oacute;tica
+        a.btn.btn-primary(type='button' href='biotec.html') Biotecnolog&iacute;a
+    // principio de cuadros
+    // primer card tic
+    .row.row-cols-1.row-cols-md-2.g-4(style='padding: 60px')
+    .col
+        .card
+        img(href='tic.html' src='https://www.alfabetizaciondigital.redem.org/wp-content/uploads/2021/06/Realidad-virtual-gusta-gente_1585651433_140351005_667x375-2100x1200.jpg' alt='...')
+        .card-body
+            h5.card-title Tic
+            p.card-text
+            | Las Tecnolog&iacute;as de la Informaci&oacute;n y las Comunicaciones (TIC), son
+            | el conjunto de recursos, herramientas, equipos, programas
+            | inform&aacute;ticos, aplicaciones, redes y medios; que permiten la
+            | compilaci&oacute;n, procesamiento, almacenamiento, transmisi&oacute;n de
+            | informaci&oacute;n como: voz, datos, texto, video e im&aacute;genes...
+    // segundo card diseño y prototipado
+    .col
+        .card
+        img.card-img-top(src='https://impresioni3d.com/wp-content/uploads/2019/02/1-Imagen.jpg' alt='...')
+        .card-body
+            h5.card-title Dise&ntilde;o
+            p.card-text
+            | Es la primera dentro del proceso de dise&ntilde;o y desarrollo. Su objetivo principal es construir una visi&oacute;n
+            | completa sobre el concepto de producto o servicio y que adem&aacute;s no caiga en sesgos personales.
+    // tercer card electronica
+    .col
+        .card
+        img.card-img-top(src='https://www.electronicaembajadores.com/datos/fotos/articulos/grandes/ro/robt/robtmk3.jpg' alt='...')
+        .card-body
+            h5.card-title Electronica
+            p.card-text
+            | La rob&oacute;tica combina diversas disciplinas como la mec&aacute;nica, la electr&oacute;nica, la inform&aacute;tica, la inteligencia
+            | artificial, la ingenier&iacute;a de control y la f&iacute;sica. &ZeroWidthSpace; Otras &aacute;reas importantes en rob&oacute;tica son el &aacute;lgebra, los
+            | aut&oacute;matas programables, la animatr&oacute;nica y las m&aacute;quinas de estados.
+    // cuarto card biotecnologia
+    .col
+        .card
+        img.card-img-top(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgiNVYsy452fXkxUnBazaukyoJ-WesZdaTYg&usqp=CAU' alt='...')
+        .card-body
+            h5.card-title Biotecnologia
+            p.card-text
+            | Agrupa todo el conjunto de t&eacute;cnicas, procesos y m&eacute;todos que utilizan organismos vivos,
+            | como las bacterias, hongos y virus, partes de ellos o sistemas biol&oacute;gicos derivados de los mismos.
+    // final cuarta parte
+    //
+    .footer.text-center
+    p.pull-left
+        | Copyright &copy; 2021 Tecnoacademia
+    script(src='assets/js/bootstrap.bundle.min.js')
