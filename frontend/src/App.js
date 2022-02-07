@@ -14,8 +14,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={Inicio}/>
-        <Route path="/Blog" element={Blog}/>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes> 
     </BrowserRouter>
   );
