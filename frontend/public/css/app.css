@@ -1,0 +1,27 @@
+.btn
+{
+    color: #000;
+    background-color: rgb(255, 106, 6);
+}
+.btn:hover
+{
+    color: #fff;
+    background-color: rgb(255, 106, 6);
+}
+.btn:focus
+{
+    color: #fff;
+    background-color: rgb(255, 106, 6);
+
+}
+.btn-primary
+{
+    color: #fff;
+    background-color: rgb(255, 106, 6);
+    border-
+}
+
+.bg-pagina
+{
+    background-color: rgb(255, 106, 6);
+}
