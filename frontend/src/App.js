@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 
 // componentes://
-import Inicio from './components/Inicio';
-import Tic from './components/Tic';
+import Inicio from './pages/Inicio';
+import Tic from './pages/Tic';
 
 
 function App() {

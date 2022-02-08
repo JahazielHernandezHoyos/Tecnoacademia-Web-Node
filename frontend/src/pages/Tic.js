@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 //componentes
-import Nav from "./Nav";
+import Nav from "../components/Nav";
 
 const Tic = () => {
     return ( 
