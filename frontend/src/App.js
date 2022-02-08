@@ -7,7 +7,7 @@ import {
 
 // componentes://
 import Inicio from './components/Inicio';
-import Blog from './components/Blog';
+import Tic from './components/Tic';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/tic" element={<Tic />} />
       </Routes> 
     </BrowserRouter>
   );
