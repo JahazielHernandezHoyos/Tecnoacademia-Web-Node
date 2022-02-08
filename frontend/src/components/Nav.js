@@ -5,7 +5,7 @@ const Nav = () => {
     <Fragment>
       <nav className="navbar navbar-expand-lg navbar-dark bg-pagina sticky-sm-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="Index.html">
+          <a className="navbar-brand" href="/">
             Tecnoacademia
           </a>
           <button
