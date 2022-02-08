@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const Nav = () => {
   return (
-    <Fragment>
+    <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-pagina sticky-sm-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
@@ -108,7 +108,7 @@ const Nav = () => {
           </div>
         </div>
       </nav>
-    </Fragment>
+    </>
   );
 };
 export default Nav;

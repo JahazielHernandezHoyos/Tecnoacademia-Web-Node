@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 //componentes
 import Nav from "../components/Nav";
 
 const Inicio = () => {
   return (
-    <Fragment>
+    <>
       <Nav />
       <section className="banner">
         <div className="banner-content">
@@ -56,7 +56,7 @@ const Inicio = () => {
       </div>
 
 
-    </Fragment>
+    </>
   );
 };
 
