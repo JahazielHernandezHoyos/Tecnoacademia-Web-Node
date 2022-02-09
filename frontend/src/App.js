@@ -8,6 +8,7 @@ import {
 // componentes://
 import Inicio from './pages/Inicio';
 import Tic from './pages/Tic';
+import Gsap from './components/Gsap';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/tic" element={<Tic />} />
+        <Route path="/gsap" element={<Gsap />} />
       </Routes> 
     </BrowserRouter>
   );

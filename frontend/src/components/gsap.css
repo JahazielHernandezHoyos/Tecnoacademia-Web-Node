@@ -1,0 +1,105 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    background-color: #eba7a4;
+  }
+  
+  .Wrapper {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Info {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .CenterInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .CenterInfo h1 {
+    width: 100%;
+    text-align: center;
+    color: #eee;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.6);
+    font-size: 6rem;
+    font-family: "Oswald";
+    line-height: 120%;
+  }
+  .CenterInfo h2 {
+    width: 100%;
+    text-align: center;
+    color: #5c5c5c;
+    font-size: 2.5rem;
+    font-family: "Poppins";
+    line-height: 120%;
+  }
+  .CenterInfo h2:nth-of-type(3) {
+    width: 100%;
+    text-align: center;
+    color: rgb(231, 90, 90);
+    font-size: 2.5rem;
+    font-family: "Poppins";
+    line-height: 120%;
+  }
+  
+  .CenterInfo p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1rem;
+    color: #5c5c5c;
+    font-family: "Poppins";
+  }
+  
+  .CenterInfo button {
+    cursor: pointer;
+    width: 40%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: #5c5c5c;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px rgba(92, 92, 92, 0.3);
+    transition: 0.3s all ease;
+  }
+  
+  .CenterInfo Button:hover {
+    background-color: #ddd;
+    box-shadow: 1px 2px 7px rgba(92, 92, 92, 0.8);
+    transition: 0.3s all ease;
+  }
+  
+  .Imagenes {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;  
+  }
+  
+  .Colum1,
+  .Colum2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  .Colum2 {
+    align-items: flex-end;
+  }
+  .Colum1 img,
+  .Colum2 img {
+    height: 70%;
+  }
