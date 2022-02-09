@@ -69,14 +69,14 @@ const Nav = () => {
                 </a>
               </li> */}
               <li className="px-2 nav-item dropdown">
-                <a
+                <div
                   className="nav-link dropdown-toggle btn btn-primary"
                   data-bs-toggle="dropdown"
                   role="button"
                   aria-expanded="false"
                 >
                   Nuestras líneas
-                </a>
+                </div>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="/tic">
