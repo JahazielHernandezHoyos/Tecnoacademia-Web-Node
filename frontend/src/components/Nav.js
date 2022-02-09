@@ -72,7 +72,6 @@ const Nav = () => {
                 <a
                   className="nav-link dropdown-toggle btn btn-primary"
                   data-bs-toggle="dropdown"
-                  href="#"
                   role="button"
                   aria-expanded="false"
                 >

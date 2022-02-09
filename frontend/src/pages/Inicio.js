@@ -10,7 +10,7 @@ const Inicio = () => {
       <section className="banner">
         <div className="banner-content">
           <h1 className="text-light">Tecnoacademia del Oriente</h1>
-          <a href="#">Acerca de nosotros</a>
+          <a href="/nosotros">Acerca de nosotros</a>
         </div>
       </section>
 
