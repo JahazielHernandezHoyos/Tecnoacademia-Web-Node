@@ -2,6 +2,7 @@ import React from "react";
 
 //componentes
 import Nav from "../components/Nav";
+import Gsap from "../components/Gsap";
 
 const Inicio = () => {
   return (
@@ -15,22 +16,7 @@ const Inicio = () => {
       </section>
 
       <div className="pad">
-        <h1 className="text-center">¿Qué es?</h1>
-        <p className="text-center p">
-          La tecnoacademia genera un escenario de aprendizaje donde los niños y
-          jóvenes de educación básica secundaria y media pueden potenciar en el
-          SENA sus capacidades de apropiación hacia la ciencia y la tecnología.
-          La formación en las tecnoacademias surge de una intervención de alto
-          impacto que busca fomentar el desarrollo de competencias en Ciencia,
-          Tecnología e Innovación en esta población, para generar competitividad
-          e igualdad de oportunidades para los estudiantes, mediante una
-          educación de alta calidad que promueve además sus habilidades de
-          comunicación y familiarización con las tecnologías emergentes. En las
-          tecnoacademias, los estudiantes desarrollan sus competencias a través
-          de la formación y la ejecución de proyectos de investigación y
-          desarrollo experimental en una o varias ramas de las ciencias básicas
-          y aplicadas como:
-        </p>
+        <Gsap />
       </div>
 
       <div className="seccion3">

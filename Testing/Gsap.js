@@ -1,39 +1,50 @@
 import React, { useEffect } from "react";
-import { gsap } from "gsap";
+import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./gsap.css";
+
 gsap.registerPlugin(ScrollTrigger);
 
-//elementos
-// const principal = document.querySelector("#scrolltrigger")
-
 const Gsap = () => {
-    
-    useEffect(() => {
-        
-
-        gsap.fromTo(".Container", {
-            autoAlpha: 0,
-        },{
-            duration: 1,
-            autoAlpha: 1,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".Container",
-                start: "top center+=100",
-                toggleActions: "play none none reverse",
-                markers: true,
+  
+  useEffect(() => {
+    const scrolltrigger = document.querySelector("#scrolltrigger");
+    const timeline = gsap.timeline({
+      defaults: {
+        opacity: 0,
+        duration: 2,
+        stagger: 0.5,
+        ease: Power4.easeOut,
+        scrollTrigger: {
+            trigger: scrolltrigger, 
+            start: "top center",
+            toggleActions: "play none none reverse", 
+            markers: true,
         }
+      },
     });
 
-    }, []);
+    const Imagenes = document.querySelectorAll("#gsap-imagenes");
+    const Titulo = document.querySelectorAll("#GsapTitulo");
+    const Titulo2 = document.querySelectorAll("#GsapTitulo2");
+    
 
-    return (
+    timeline
+      .from(Titulo, { x: 50, y: -300 })
+      .from(Titulo2, { x: -50, y: -20 }, "-=1.3")
+      .from(
+        Imagenes,
+        { y: 60, stagger: 0.3 },
+        "-=1.5"
+      );
+  }, []);
+
+  return (
     <>
-      <div className="Container">
-        <div className="Wrapper">
-          <div className="Info">
-            <div className="CenterInfo">
+      <div id="scrolltrigger" class="Container">
+        <div class="Wrapper">
+          <div class="Info">
+            <div class="CenterInfo">
               <h2 id="GsapTitulo">Bienvenido a </h2>
               <h2 id="GsapTitulo">Tecnoacademia del oriente</h2>
               <h1 id="GsapTitulo2">¿Qué es?</h1>
@@ -56,15 +67,15 @@ const Gsap = () => {
               <button>Ver areas</button>
             </div>
           </div>
-          <div className="Imagenes">
-            <div className="Colum1">
+          <div class="Imagenes">
+            <div class="Colum1">
               <img
                 id="gsap-imagenes"
                 src="https://actuaria.com.ec/wp-content/uploads/2021/01/VECTORES-METODOLOGIA.png"
                 alt=""
               />
             </div>
-            <div className="Colum2">
+            <div class="Colum2">
               <img
                 id="gsap-imagenes"
                 src="https://c.tenor.com/NBu8UN5btUoAAAAi/vector-computer.gif"
