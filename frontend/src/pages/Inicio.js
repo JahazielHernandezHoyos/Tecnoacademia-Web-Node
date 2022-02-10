@@ -15,13 +15,13 @@ const Inicio = () => {
         </div>
       </section>
 
-      <div className="pad">
+      <div className="">
         <Gsap />
       </div>
 
-      <div className="seccion3">
+      <div className="mt-5 seccion3">
         <h1 class="text-center text-light">Lineas de la Tecnoacadamia</h1>
-        <div class="text-center py-6 ">
+        <div class="text-center ">
           <a type="button" class="m-3 btn btn-outline-light" href="tic.html">
             TIC
           </a>
