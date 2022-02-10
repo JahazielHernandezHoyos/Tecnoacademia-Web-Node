@@ -57,7 +57,7 @@ const Gsap = () => {
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3" src="https://actuaria.com.ec/wp-content/uploads/2021/01/VECTORES-METODOLOGIA.png" width="800"></img>
+          <img class="rounded-lg-3" src="https://actuaria.com.ec/wp-content/uploads/2021/01/VECTORES-METODOLOGIA.png" alt="metologias" width="800"></img>
       </div>
     </div>
       </div>
