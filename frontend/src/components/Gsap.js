@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Gsap = () => {
   useEffect(() => {
     gsap.fromTo(
-      ".Container",
+      ".Container",".Seccion3",".banner",
       {
         autoAlpha: 0,
       },
@@ -27,23 +27,6 @@ const Gsap = () => {
       }
     );
 
-    gsap.fromTo(
-      ".seccion3",
-      {
-        autoAlpha: 0,
-      },
-      {
-        duration: 1,
-        autoAlpha: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".seccion3",
-          start: "top center+=100",
-          toggleActions: "play none none reverse",
-          markers: true,
-        },
-      }
-    );
   }, []);
 
   return (
