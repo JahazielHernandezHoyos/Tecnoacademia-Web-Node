@@ -30,6 +30,7 @@ const Nav = () => {
                   ¿Quiénes somos?
                 </a>
               </li> */}
+              
               {/* <li className="px-2 nav-item">
                 <a
                   className="nav-link btn btn-primary"
