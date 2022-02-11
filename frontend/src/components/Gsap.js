@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Gsap = () => {
   useEffect(() => {
     gsap.fromTo(
-      ".Container",
+      ".Container1",
       {
         autoAlpha: 0,
       },
