@@ -54,12 +54,6 @@ const Gsap = () => {
         duration: 1,
         autoAlpha: 1,
         ease: "none",
-        scrollTrigger: {
-          trigger: ".banner",
-          start: "top center+=100",
-          toggleActions: "play none none reverse",
-          markers: true,
-        },
       }
     );
 
