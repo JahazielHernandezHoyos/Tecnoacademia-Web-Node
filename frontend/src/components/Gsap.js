@@ -22,7 +22,23 @@ const Gsap = () => {
           trigger: ".Container1",
           start: "top center+=100",
           toggleActions: "play none none reverse",
-          markers: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".Container1",
+      {
+        autoAlpha: 0,
+      },
+      {
+        duration: 1,
+        autoAlpha: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".Container1",
+          start: "top center+=100",
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -40,20 +56,17 @@ const Gsap = () => {
           trigger: ".seccion3",
           start: "top center+=100",
           toggleActions: "play none none reverse",
-          markers: true,
         },
       }
     );
 
-    gsap.fromTo(
+    gsap.from(
       ".banner",
       {
-        autoAlpha: 0,
+        autoAlpha: 1,
       },
       {
-        duration: 1,
-        autoAlpha: 1,
-        ease: "none",
+        duration: 1,  autoAlpha: 0,
       }
     );
 
