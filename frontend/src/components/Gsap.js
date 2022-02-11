@@ -9,6 +9,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Gsap = () => {
   useEffect(() => {
+
+    gsap.to(".titulosGsap", {
+      duration: 1,
+      opacity: 0,
+      y: -100
+    });
+
+
     gsap.fromTo(
       ".Container1",
       {

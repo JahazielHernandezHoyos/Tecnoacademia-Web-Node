@@ -8,11 +8,13 @@ const Tic = () => {
   return (
     <>
       <Nav />
-      <section class="bannerm">
-        <div class="banner-contentm">
-          <h1 class="text-light">Tecnologías de la información y la comunicación</h1>
+      <div class="titulosGsap">
+        <div class="banner">
+          <div class="banner-content">
+            <h1 class="text-light">Tecnologías de la información y la comunicación</h1>
+          </div>
         </div>
-      </section>
+      </div>
       <Articulo />
     </>
   );
