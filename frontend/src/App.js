@@ -10,7 +10,6 @@ import Inicio from './pages/Inicio';
 import Tic from './pages/Tic';
 import Gsap from './components/Gsap';
 
-
 function App() {
   return (
     <BrowserRouter>

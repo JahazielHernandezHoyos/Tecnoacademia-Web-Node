@@ -30,7 +30,7 @@ const Nav = () => {
                   ¿Quiénes somos?
                 </a>
               </li> */}
-              
+
               {/* <li className="px-2 nav-item">
                 <a
                   className="nav-link btn btn-primary"
@@ -39,11 +39,21 @@ const Nav = () => {
                   Modelo pedagógico
                 </a>
               </li> */}
-              {/* <li className="px-2 nav-item">
-                <a className="nav-link btn btn-primary" href="galeria.html">
+              <li className="px-2 nav-item ">
+                <a
+                  className="nav-link btn btn-white rounded-pill shadow-lg"
+                  href="https://tecnoacademia.herokuapp.com/admin"
+                >
+                  Ingresar
+                </a>
+              </li>
+
+              <li className="px-2 nav-item">
+                <a className="nav-link btn btn-primary" href="/galeria">
                   Galería
                 </a>
-              </li> */}
+              </li>
+
               {/* <li className="px-2 nav-item">
                 <a
                   className="nav-link btn btn-primary"

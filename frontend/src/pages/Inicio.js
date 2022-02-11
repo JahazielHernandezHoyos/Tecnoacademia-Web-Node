@@ -1,5 +1,6 @@
 import React from "react";
 
+
 //componentes
 import Nav from "../components/Nav";
 import Gsap from "../components/Gsap";
