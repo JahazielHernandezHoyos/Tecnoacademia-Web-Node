@@ -27,6 +27,42 @@ const Gsap = () => {
       }
     );
 
+    gsap.fromTo(
+      ".seccion3",
+      {
+        autoAlpha: 0,
+      },
+      {
+        duration: 1,
+        autoAlpha: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".Container1",
+          start: "top center+=100",
+          toggleActions: "play none none reverse",
+          markers: true,
+        },
+      }
+    );
+
+    gsap.fromTo(
+      ".banner",
+      {
+        autoAlpha: 0,
+      },
+      {
+        duration: 1,
+        autoAlpha: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".Container1",
+          start: "top center+=100",
+          toggleActions: "play none none reverse",
+          markers: true,
+        },
+      }
+    );
+
   }, []);
 
   return (

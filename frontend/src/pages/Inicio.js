@@ -15,7 +15,7 @@ const Inicio = () => {
         </div>
       </section>
 
-      <div className="">
+      <div>
         <Gsap />
       </div>
 
