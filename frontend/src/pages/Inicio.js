@@ -22,7 +22,7 @@ const Inicio = () => {
       <div className="mt-5 seccion3">
         <h1 class="text-center text-light">Lineas de la Tecnoacadamia</h1>
         <div class="text-center ">
-          <a type="button" class="m-3 btn btn-outline-light" href="tic.html">
+          <a type="button" class="m-3 btn btn-outline-light" href="/tic">
             TIC
           </a>
           <a type="button" class="m-3 btn btn-outline-light" href="diseño.html">
