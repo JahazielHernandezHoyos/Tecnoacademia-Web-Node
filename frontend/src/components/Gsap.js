@@ -37,7 +37,7 @@ const Gsap = () => {
         autoAlpha: 1,
         ease: "none",
         scrollTrigger: {
-          trigger: ".Container1",
+          trigger: ".seccion3",
           start: "top center+=100",
           toggleActions: "play none none reverse",
           markers: true,
@@ -55,7 +55,7 @@ const Gsap = () => {
         autoAlpha: 1,
         ease: "none",
         scrollTrigger: {
-          trigger: ".Container1",
+          trigger: ".banner",
           start: "top center+=100",
           toggleActions: "play none none reverse",
           markers: true,
