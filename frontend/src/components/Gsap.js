@@ -10,13 +10,14 @@ gsap.registerPlugin(ScrollTrigger);
 const Gsap = () => {
   useEffect(() => {
     gsap.fromTo(
-      ".Container .Seccion3 .banner",
+      ".Container",
       {
         autoAlpha: 0,
       },
       {
         duration: 1,
         autoAlpha: 1,
+        delay: 1,
         ease: "none",
         scrollTrigger: {
           trigger: ".Container",
