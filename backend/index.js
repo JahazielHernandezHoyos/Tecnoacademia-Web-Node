@@ -4,6 +4,7 @@ import conectarDB from "./config/db.js";
 import administradoresRoutes from "./routes/administradorRoutes.js";
 
 const app = express();
+app.use(express.json());
 dotenv.config();
 
 console.log(process.env.MONGO_URI)
