@@ -41,47 +41,22 @@ const Nav = () => {
               </li> */}
               <li className="px-2 nav-item ">
                 <a
-                  className="nav-link btn btn-white rounded-pill shadow-lg"
-                  href="https://tecnoacademia.herokuapp.com/admin"
+                  className="nav-link btn btn-white rounded-pill"
+                  href="/login"
                 >
                   Ingresar
                 </a>
               </li>
 
               <li className="px-2 nav-item">
-                <a className="nav-link btn btn-primary" href="/galeria">
+                <a className="nav-link btn btn-white rounded-pill" href="/galeria">
                   Galería
                 </a>
               </li>
 
-              {/* <li className="px-2 nav-item">
-                <a
-                  className="nav-link btn btn-primary"
-                  aria-current="page"
-                  href="Blog.html"
-                >
-                  Blog
-                </a>
-              </li> */}
-              {/* <li className="px-2 nav-item">
-                <a
-                  className="nav-link btn btn-primary"
-                  href="#scrollspyHeading3"
-                >
-                  Participación en eventos
-                </a>
-              </li> */}
-              {/* <li className="px-2 nav-item">
-                <a
-                  className="nav-link btn btn-primary"
-                  href="#scrollspyHeading4"
-                >
-                  Contacto
-                </a>
-              </li> */}
-              <li className="px-2 nav-item dropdown">
+              <li className="px-2 nav-item dropdown ">
                 <div
-                  className="nav-link dropdown-toggle btn btn-primary"
+                  className="nav-link dropdown-toggle btn btn-white rounded-pill"
                   data-bs-toggle="dropdown"
                   role="button"
                   aria-expanded="false"
