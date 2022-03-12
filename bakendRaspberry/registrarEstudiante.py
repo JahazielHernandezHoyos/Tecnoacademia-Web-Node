@@ -43,7 +43,7 @@ def Validar(ti):
         if documento["huella"] == "":
             actualizarRegistro(documento["_id"], documento)
         else:
-            tk.messagebox.showerror("Asistencia", "Bienvenido " + documento["nombre"] + " Ingresa tu huella con el dedo indice para registrar tu asistencia")
+            tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["nombre"] + " Ingresa tu huella con el dedo indice para registrar tu asistencia")
         break
     else:
         system("cls")
