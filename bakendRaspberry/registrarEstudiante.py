@@ -39,7 +39,6 @@ def ventanaInicial():
 
 def Validacion(di, huella):
     #validacion por documento de identidad
-    
     if huella == None:
         documento = collection.find_one({
             "ti": di
@@ -60,7 +59,6 @@ def Validacion(di, huella):
             tk.messagebox.showinfo("Registro de huella", "No se encontro el estudiante")
         else:
             registrarAsistencia(documento["_id"], documento)
-            tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["nombre"] + " tu asistencia ha sido registrada")
 
     
 def registrarHuella(id, documento):
@@ -75,7 +73,7 @@ def registrarHuella(id, documento):
 
 
 def registrarAsistencia(id, documento):
-    if documento["registroDelDia"] == True:
+    if documento["registroDelDia"] == False:
         collection.update_one(
             {"_id": id},
             {"$set": {
@@ -84,13 +82,15 @@ def registrarAsistencia(id, documento):
             }
             }
         )
+        tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["nombre"] + " tu asistencia ha sido registrada")
     else:
         tk.messagebox.showerror("Registro de asistencia", documento["nombre"] + " ya pasastes la asistencia de hoy")
 
 
-
 def main():
-    collection.update(
+    collection.update_many(
+            {"registroDelDia": 
+            True},
             {"$set": {
                 "registroDelDia": False
             }
