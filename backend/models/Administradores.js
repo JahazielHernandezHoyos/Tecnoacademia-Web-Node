@@ -32,5 +32,9 @@ const administradoresSchema = mongoose.Schema({
     }
 });
 
+administradoresSchema.methods.comprobarPassword = async function() {
+    return 
+}
+
 const Administradores = mongoose.model('Administradores', administradoresSchema);
 export default Administradores;
