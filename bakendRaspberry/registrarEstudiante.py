@@ -43,15 +43,15 @@ def Validar(ti):
         if documento["huella"] == "":
             actualizarRegistro(documento["_id"], documento)
         else:
-            print("Bienvenido " + documento["nombre"] + " Ingresa tu huella con el dedo indice para registrar tu asistencia")
+            tk.messagebox.showerror("Asistencia", "Bienvenido " + documento["nombre"] + " Ingresa tu huella con el dedo indice para registrar tu asistencia")
         break
     else:
         system("cls")
-        print("El estudiante no esta en la base de datos")
+        tk.messagebox.showerror("ERROR", "El estudiante no esta en la base de datos")
 
     
 def actualizarRegistro(id, documento):
-    tk.messagebox.showinfo("Tu huella no esta registrada", "Bienvenido " + documento["nombre"] + " ingresa tu huella con el dedo indice para registrarte en la Base de datos") 
+    tk.messagebox.showinfo("Registro de huella", "Bienvenido " + documento["nombre"] + " ingresa tu huella con el dedo indice para registrarte en la Base de datos") 
     huella = gx_ref_buffer #capturar la huella simulacion #################################
     collection.update_one(
         {"_id": id},
