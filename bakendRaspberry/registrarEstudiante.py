@@ -4,7 +4,7 @@ import tkinter as tk
 from os import system
 
 #simulacion entrada de huella
-gx_ref_buffer = "25"
+gx_ref_buffer = "13"
 
 #conectar a la base de datos
 client = MongoClient("mongodb+srv://tecnoacademiaADMIN:bBTWBBnFDG2aReok@tecnoacademia.mjfzz.mongodb.net/estudiantes?retryWrites=true&w=majority") 
@@ -72,7 +72,7 @@ def registrarHuella(id, documento):
         }}
     )
 
-def registrarAsistencia(di, documento):
+def registrarAsistencia(id, documento):
     collection.update_one(
         {"_id": id},
         {"$set": {
