@@ -4,7 +4,7 @@ import tkinter as tk
 from os import system
 
 #simulacion entrada de huella
-gx_ref_buffer = "12"
+gx_ref_buffer = "25"
 
 #conectar a la base de datos
 client = MongoClient("mongodb+srv://tecnoacademiaADMIN:bBTWBBnFDG2aReok@tecnoacademia.mjfzz.mongodb.net/estudiantes?retryWrites=true&w=majority") 
@@ -18,13 +18,13 @@ ventana.geometry("640x480")
 
 def ventanaInicial():
     #crear label
-    tiLabel = tk.Label(ventana, text="T.I: ")
-    tiEntry = tk.Entry(ventana)
-    tiLabel.grid(row=0, column=0)
-    tiEntry.grid(row=0, column=1)
+    diLabel = tk.Label(ventana, text="Numero de documento: ")
+    diEntry = tk.Entry(ventana)
+    diLabel.grid(row=0, column=0)
+    diEntry.grid(row=0, column=1)
     
     #crear boton enviar ti
-    boton = tk.Button(ventana, text="Verificar TI", command=lambda: Validacion(tiEntry.get(), None))
+    boton = tk.Button(ventana, text="Verificar TI", command=lambda: Validacion(diEntry.get(), None))
     boton.grid(row=5, column=1)
 
     #crear boton registrar asistencia
@@ -36,20 +36,22 @@ def ventanaInicial():
     ventana.mainloop()
 
 
-def Validacion(ti, huella):
-    #validacion por tarjeta de identidad
-    print(huella)
+def Validacion(di, huella):
+    #validacion por documento de identidad
+    
     if huella == None:
         documento = collection.find_one({
-            "ti": ti
+            "ti": di
         })
         if documento is None:
             tk.messagebox.showinfo("Registro de huella", "No se encontro el estudiante")
+        if di == documento["ti"] and documento["huella"] != "":
+            tk.messagebox.showinfo("Registro de huella", "Usted ya se encuentra registrado, envie su asistencia")
         if documento["huella"] == "":
             registrarHuella(documento["_id"], documento)
             
     #validacion por huella
-    if ti == None:
+    if di == None:
         documento = collection.find_one({
             "huella": huella
         })
@@ -61,7 +63,7 @@ def Validacion(ti, huella):
 
     
 def registrarHuella(id, documento):
-    tk.messagebox.showinfo("Registro de huella", "Bienvenido " + documento["nombre"] + " ingresa tu huella con el dedo indice para registrarte en la Base de datos") 
+    tk.messagebox.showinfo("Registro de huella", "Bienvenido " + documento["nombre"] + " coloca tu dedo indice para registrarte en la Base de datos antes de darle al boton de aceptar") 
     lectura = gx_ref_buffer #capturar la huella simulacion #################################
     collection.update_one(
         {"_id": id},
@@ -70,7 +72,7 @@ def registrarHuella(id, documento):
         }}
     )
 
-def registrarAsistencia(id, documento):
+def registrarAsistencia(di, documento):
     collection.update_one(
         {"_id": id},
         {"$set": {
