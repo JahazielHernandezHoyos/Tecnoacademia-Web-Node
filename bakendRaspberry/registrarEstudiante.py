@@ -38,18 +38,17 @@ def registrarEstudiante():
 
 def Validar(ti):
 
-    for documento in collection.find({
+    documento = collection.find_one({
         "ti": ti
-    }):
-        system("cls")
-        if documento["huella"] == "":
-            actualizarRegistro(documento["_id"], documento)
-        else:
-            tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["nombre"] + " Ingresa tu huella con el dedo indice para registrar tu asistencia")
-        break
-    else:
-        system("cls")
-        tk.messagebox.showerror("ERROR", "El estudiante no esta en la base de datos")
+    })
+    system("cls")
+    if documento is None:
+        tk.messagebox.showinfo("Registro de huella", "No se encontro el estudiante")
+    if documento["huella"] == "":
+        actualizarRegistro(documento["_id"], documento)
+    if documento["huella"] != "":
+        tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["nombre"] + " Ingresa tu huella con el dedo indice para registrar tu asistencia")
+        
 
     
 def actualizarRegistro(id, documento):
