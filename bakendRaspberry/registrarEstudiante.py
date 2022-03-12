@@ -1,7 +1,7 @@
 from turtle import clear
 from pymongo import MongoClient
 import tkinter as tk
-from os import system
+from os import system 
 
 #simulacion entrada de huella
 gx_ref_buffer = "13"
@@ -15,6 +15,7 @@ collection = baseDeDatos["estudiantes"] #Selecciona la coleccion
 ventana = tk.Tk()
 ventana.title("Registrar Estudiante")
 ventana.geometry("640x480")
+
 
 def ventanaInicial():
     #crear label
@@ -72,14 +73,28 @@ def registrarHuella(id, documento):
         }}
     )
 
+
 def registrarAsistencia(id, documento):
-    collection.update_one(
-        {"_id": id},
-        {"$set": {
-            "asistencia": documento["asistencia"] + 1
-        }}
-    )
+    if documento["registroDelDia"] == True:
+        collection.update_one(
+            {"_id": id},
+            {"$set": {
+                "asistencia": documento["asistencia"] + 1,
+                "registroDelDia": True
+            }
+            }
+        )
+    else:
+        tk.messagebox.showerror("Registro de asistencia", documento["nombre"] + " ya pasastes la asistencia de hoy")
+
+
 
 def main():
+    collection.update(
+            {"$set": {
+                "registroDelDia": False
+            }
+            }
+        )
     ventanaInicial()
 main()
