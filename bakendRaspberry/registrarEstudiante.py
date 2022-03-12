@@ -23,11 +23,13 @@ def registrarEstudiante():
     tiLabel.grid(row=0, column=0)
     tiEntry.grid(row=0, column=1)
     
-    #crear boton
-    boton = tk.Button(ventana, text="Enviar", command=lambda: Validar(tiEntry.get()))
-    #posicionar boton
+    #crear boton enviar ti
+    boton = tk.Button(ventana, text="Verificar TI", command=lambda: Validar(tiEntry.get()))
     boton.grid(row=5, column=1)
-    #ejecutar ventana
+
+    #crear boton registrar asistencia
+    boton = tk.Button(ventana, text="Enviar asistencia", command=lambda: Validar(gx_ref_buffer.get()))
+    boton.grid(row=5, column=2)
 
     #vaciar consola
     system("cls")
@@ -57,6 +59,14 @@ def actualizarRegistro(id, documento):
         {"_id": id},
         {"$set": {
             "huella": huella
+        }}
+    )
+
+def registrarAsistencia(id, documento):
+    collection.update_one(
+        {"_id": id},
+        {"$set": {
+            "Asistencias": documento["Asistencias"] + 1
         }}
     )
 
