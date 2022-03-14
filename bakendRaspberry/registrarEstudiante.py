@@ -3,8 +3,8 @@ from pymongo import MongoClient
 import tkinter as tk
 from os import system 
 
-#simulacion entrada de huella
-gx_ref_buffer = "13"
+#simulacion entrada de Huella
+gx_ref_buffer = ""
 
 #conectar a la base de datos
 client = MongoClient("mongodb+srv://tecnoacademiaADMIN:bBTWBBnFDG2aReok@tecnoacademia.mjfzz.mongodb.net/estudiantes?retryWrites=true&w=majority") 
@@ -37,37 +37,37 @@ def ventanaInicial():
     ventana.mainloop()
 
 
-def Validacion(di, huella):
+def Validacion(di, Huella):
     #validacion por documento de identidad
-    if huella == None:
+    if Huella == None:
         documento = collection.find_one({
-            "ti": di
+            "Número de identificación": di
         })
         if documento is None:
-            tk.messagebox.showinfo("Registro de huella", "No se encontro el estudiante")
-        if di == documento["ti"] and documento["huella"] != "":
-            tk.messagebox.showinfo("Registro de huella", "Usted ya se encuentra registrado, envie su asistencia")
-        if documento["huella"] == "":
+            tk.messagebox.showinfo("Registro de Huella", "No se encontro el estudiante")
+        if di == documento["Número de identificación"] and documento["Huella"] != "":
+            tk.messagebox.showinfo("Registro de Huella", "Usted ya se encuentra registrado, envie su asistencia")
+        if documento["Huella"] == "":
             registrarHuella(documento["_id"], documento)
             
-    #validacion por huella
+    #validacion por Huella
     if di == None:
         documento = collection.find_one({
-            "huella": huella
+            "Huella": Huella
         })
         if documento is None:
-            tk.messagebox.showinfo("Registro de huella", "No se encontro el estudiante")
+            tk.messagebox.showinfo("Registro de Huella", "No se encontro el estudiante")
         else:
             registrarAsistencia(documento["_id"], documento)
 
     
 def registrarHuella(id, documento):
-    tk.messagebox.showinfo("Registro de huella", "Bienvenido " + documento["nombre"] + " coloca tu dedo indice para registrarte en la Base de datos antes de darle al boton de aceptar") 
-    lectura = gx_ref_buffer #capturar la huella simulacion #################################
+    tk.messagebox.showinfo("Registro de Huella", "Bienvenido " + documento["Nombre Completo "] + " coloca tu dedo indice para registrarte en la Base de datos antes de darle al boton de aceptar") 
+    lectura = gx_ref_buffer #capturar la Huella simulacion #################################
     collection.update_one(
         {"_id": id},
         {"$set": {
-            "huella": lectura
+            "Huella": lectura
         }}
     )
 
@@ -82,9 +82,9 @@ def registrarAsistencia(id, documento):
             }
             }
         )
-        tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["nombre"] + " tu asistencia ha sido registrada")
+        tk.messagebox.showinfo("Asistencia", "Bienvenido " + documento["Nombre Completo "] + " tu asistencia ha sido registrada")
     else:
-        tk.messagebox.showerror("Registro de asistencia", documento["nombre"] + " ya pasastes la asistencia de hoy")
+        tk.messagebox.showerror("Registro de asistencia", documento["Nombre Completo "] + " ya pasastes la asistencia de hoy")
 
 
 def main():
