@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import generarId from "../helpers/generarId.js";
 
+
 const administradoresSchema = mongoose.Schema({
     nombre: {
         type: String,
