@@ -5,11 +5,12 @@ from turtle import clear
 from pymongo import MongoClient
 import tkinter as tk
 from os import system
-from Lector_huella import AddUser 
-
-#simulacion entrada de Huella
+# from Lector_huella import AddUser 
 gx_ref_buffer = ""
-
+#simulacion entrada de Huella
+def AddUser():
+    gx_ref_buffer = ""
+    return gx_ref_buffer
 #conectar a la base de datos
 client = MongoClient("mongodb+srv://tecnoacademiaADMIN:bBTWBBnFDG2aReok@tecnoacademia.mjfzz.mongodb.net/estudiantes?retryWrites=true&w=majority") 
 baseDeDatos = client["Tecnoacademia"] #Selecciona la base de datos
@@ -44,12 +45,13 @@ def ventanaInicial():
 def Validacion(di, Huella):
     #validacion por documento de identidad
     if Huella == None:
+        print(di)
         documento = collection.find_one({
-            "Número de identificación": di
+            "Numero de identificacion": di
         })
         if documento is None:
             print("Registro de Huella", "No se encontro el estudiante")
-        if di == documento["Número de identificación"] and documento["Huella"] != "":
+        if di == documento["Numero de identificacion"] and documento["Huella"] != "":
             print("Registro de Huella", "Usted ya se encuentra registrado, envie su asistencia")
         if documento["Huella"] == "":
             registrarHuella(documento["_id"], documento)
