@@ -23,7 +23,7 @@ const Articulo = () => {
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
               <a
-                href="https://sites.google.com/misena.edu.co/curso-tic/inicio?authuser=0"
+                href="/blogs"
                 type="button"
                 class="btn btn-primary btn-lg px-4 me-md-2"
               >

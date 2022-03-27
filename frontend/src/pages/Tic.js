@@ -16,7 +16,6 @@ const Tic = () => {
         </div>
       </div>
       <Articulo />
-      <iframe style={{width:"100%", height: "1000px"}} src="https://sites.google.com/misena.edu.co/curso-tic/actividades-de-aprendizaje?authuser=0" title="diseño"></iframe>
     </>
   );
 };
