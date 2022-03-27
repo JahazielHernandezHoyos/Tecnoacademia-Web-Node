@@ -11,6 +11,7 @@ const Blogs = () => {
           </div>
         </div>
       </div>
+      <iframe style={{width:"100%", height: "1000px"}} src="https://tecnoacademiaoriente.netlify.app/" title="description"></iframe>
     </>
   );
 };
