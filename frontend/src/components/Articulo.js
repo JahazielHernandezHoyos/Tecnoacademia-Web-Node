@@ -16,22 +16,21 @@ const Articulo = () => {
             ></img>
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Python clases
-            </h1>
+            <h1 class="display-5 fw-bold lh-1 mb-3">Aprende Python</h1>
             <p class="lead">
-                Python es un lenguaje de programación interpretado, de tipado dinámico, aprende lecciones sobre programación orientada a objetos como tambien Data Science en conjunto con inteligencia artificial.
+              El lenguaje de programación Python es ampliamente utilizado por
+              empresas de todo el mundo para construir aplicaciones web,
+              analizar datos, automatizar operaciones y crear aplicaciones
+              empresariales fiables y escalables..
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Ver lecciones
-              </button>
-              <button
+              <a
+                href="https://sites.google.com/misena.edu.co/curso-tic/inicio?authuser=0"
                 type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
+                class="btn btn-primary btn-lg px-4 me-md-2"
               >
-                Lo que puedes hacer
-              </button>
+                Ver más
+              </a>
             </div>
           </div>
         </div>
@@ -50,22 +49,23 @@ const Articulo = () => {
             ></img>
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Javascript clases
-            </h1>
+            <h1 class="display-5 fw-bold lh-1 mb-3">Aprende Javascript</h1>
             <p class="lead">
-                Javascript es un lenguaje de programación interpretado, de tipado dinámico, aprende lecciones sobre programación orientada a objetos como tambien Data Science en conjunto con inteligencia artificial.
+              ¿Qué es y para qué sirve JavaScript? Resultado de imagen para
+              javascript JavaScript es el lenguaje de programación que debes
+              usar para añadir características interactivas a tu sitio web, (por
+              ejemplo, juegos, eventos que ocurren cuando los botones son
+              presionados o los datos son introducidos en los formularios,
+              efectos de estilo dinámicos, animación, y mucho más).
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Ver lecciones
-              </button>
-              <button
+              <a
+                href="https://sites.google.com/misena.edu.co/curso-tic/actividades-de-aprendizaje?authuser=0"
                 type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
+                class="btn btn-primary btn-lg px-4 me-md-2"
               >
-                Lo que puedes hacer
-              </button>
+                Ver más
+              </a>
             </div>
           </div>
         </div>
@@ -75,4 +75,3 @@ const Articulo = () => {
 };
 
 export default Articulo;
-
