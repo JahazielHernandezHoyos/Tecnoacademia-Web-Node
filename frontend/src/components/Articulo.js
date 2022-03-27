@@ -7,6 +7,37 @@ const Articulo = () => {
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <img
+              src="https://static.vecteezy.com/system/resources/previews/002/264/831/original/creating-personal-blog-vector.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            ></img>
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Nuestro Blog</h1>
+            <p class="lead">
+              Hecho por estudiantes para estudiantes, información útil a la hora
+              de realizar proyectos.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a
+                href="https://sites.google.com/misena.edu.co/curso-tic/inicio?authuser=0"
+                type="button"
+                class="btn btn-primary btn-lg px-4 me-md-2"
+              >
+                Ver más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 shadow-lg p-3 mb-5 bg-body rounded border container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
               class="d-block mx-lg-auto img-fluid"
               alt="Bootstrap Themes"

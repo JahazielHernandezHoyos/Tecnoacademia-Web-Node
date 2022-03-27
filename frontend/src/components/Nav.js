@@ -49,8 +49,8 @@ const Nav = () => {
               </li>
 
               <li className="px-2 nav-item">
-                <a className="nav-link btn btn-white rounded-pill" href="/galeria">
-                  Galería
+                <a className="nav-link btn btn-white rounded-pill" href="/blogs">
+                  Blog
                 </a>
               </li>
 
@@ -70,7 +70,7 @@ const Nav = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="diseño.html">
+                    <a className="dropdown-item" href="/design">
                       Diseño y prototipado
                     </a>
                   </li>
