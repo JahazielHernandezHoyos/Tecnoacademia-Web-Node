@@ -12,6 +12,7 @@ import Gsap from './components/Gsap';
 import Login from "./pages/Login";
 import Blogs from "./pages/Blogs";
 import Design from './pages/Design';
+import Galeria from './pages/Galeria';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/design" element={<Design />} />
+        <Route path="/galeria" element={<Galeria />} />
       </Routes> 
     </BrowserRouter>
   );
