@@ -57,7 +57,7 @@ const Nav = () => {
               <li className="px-2 nav-item ">
                 <a
                   className="nav-link btn btn-white rounded-pill"
-                  href="/login"
+                  href="/galeria"
                 >
                   Galeria
                 </a>
