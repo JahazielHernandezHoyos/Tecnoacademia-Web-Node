@@ -13,7 +13,7 @@ const Inicio = () => {
       <section className="banner">
         <div className="banner-content">
           <img height="300" alt="bannerlogo" src={bannerlogo}/>
-          <a href="/nosotros">Acerca de nosotros</a>
+          <a href="#nosotros">Acerca de nosotros</a>
         </div>
       </section>
 
@@ -27,7 +27,7 @@ const Inicio = () => {
           <a type="button" class="m-3 btn btn-outline-light" href="/tic">
             TIC
           </a>
-          <a type="button" class="m-3 btn btn-outline-light" href="diseño.html">
+          <a type="button" class="m-3 btn btn-outline-light" href="/design">
             Diseño y prototipado
           </a>
           <a
@@ -37,7 +37,7 @@ const Inicio = () => {
           >
             Electrónica y robótica
           </a>
-          <a type="button" class="btn btn-outline-light" href="biotec.html">
+          <a type="button" class="btn btn-outline-light" href="/Biotecnologia">
             Biotecnología
           </a>
         </div>

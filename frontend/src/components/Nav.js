@@ -92,7 +92,7 @@ const Nav = () => {
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="biotec.html">
+                    <a className="dropdown-item" href="/Biotecnologia">
                       Biotecnología
                     </a>
                   </li>
